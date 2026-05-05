@@ -25,7 +25,7 @@ This system helps promote local handmade products and supports small businesses 
 
 ---
 
-### 💳 Payment Management (My Role)
+### 💳 Payment Management – My Contribution
 - Secure online payment integration  
 - Multiple payment methods
 - Transaction tracking & history  
