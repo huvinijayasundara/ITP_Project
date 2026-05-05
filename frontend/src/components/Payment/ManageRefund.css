@@ -1,0 +1,164 @@
+.manage-refund-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Table Styles */
+.refund-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-top: 1rem;
+}
+
+.refund-table th,
+.refund-table td {
+  padding: 14px 16px;
+  text-align: left;
+}
+
+.refund-table th {
+  background-color: #2c3e50;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.refund-table tr {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+
+.refund-table tr td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.refund-table tr td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.refund-table tr:hover {
+  background-color: #f0f2f5;
+  transition: background 0.3s ease;
+}
+
+/* Status Badge Styles */
+.status-badge {
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.status-badge.requested {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Button Styles */
+.action-buttons button {
+  margin-right: 6px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.approve-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.approve-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+}
+
+.error-msg {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 12px;
+  border-left: 5px solid #dc3545;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .refund-table,
+  .refund-table thead,
+  .refund-table tbody,
+  .refund-table th,
+  .refund-table td,
+  .refund-table tr {
+    display: block;
+  }
+
+  .refund-table tr {
+    margin-bottom: 1rem;
+  }
+
+  .refund-table td {
+    padding-left: 50%;
+    position: relative;
+    text-align: left;
+  }
+
+  .refund-table td::before {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .refund-table td:nth-of-type(1)::before { content: "Payment ID"; }
+  .refund-table td:nth-of-type(2)::before { content: "User"; }
+  .refund-table td:nth-of-type(3)::before { content: "Reason"; }
+  .refund-table td:nth-of-type(4)::before { content: "Status"; }
+  .refund-table td:nth-of-type(5)::before { content: "Requested At"; }
+  .refund-table td:nth-of-type(6)::before { content: "Responded At"; }
+  .refund-table td:nth-of-type(7)::before { content: "Actions"; }
+}
