@@ -1,4 +1,4 @@
-# 🧵 Handicraft Buy & Selling Platform
+# 🧵 Handicraft Buying & Selling Platform
 
 A full-stack **MERN** web application designed to connect handicraft sellers and buyers in one online marketplace.  
 This system helps promote local handmade products and supports small businesses through digital marketing, secure payments, and easy online sales.
